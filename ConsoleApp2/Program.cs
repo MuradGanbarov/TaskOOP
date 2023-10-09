@@ -198,3 +198,95 @@
 //{
 //    Console.WriteLine(s + " aarray element");
 //}
+
+//TASK 4
+//namespace Task4
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine(TrimStart("            0000abc000"));
+//        }
+
+//        static string TrimStart(string text)
+//        {
+//            if (text[0] != ' ') return text;
+
+//            else
+//            {
+//                string newText = "";
+
+//                for (int i = 1; i < text.Length; i++)
+//                {
+//                    if (text[i] == ' ')
+//                    {
+//                        continue;
+//                    }
+
+//                    newText += text[i];
+
+//                }
+
+//                return newText;
+//            }
+
+//        }
+
+//namespace Task4
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine(Trim("            0000abc000        "));
+//        }
+
+//        static string Trim(string text)
+//        {
+//            if (text[0] != ' ') return text;
+//            string newText = "";
+
+//            for (int i = 1; i < text.Length; i++)
+//            {
+//                if (text[i] == ' ')
+//                {
+//                    continue;
+//                }
+
+//                newText += text[i];
+
+//            }
+
+//            if (newText[newText.Length - 1] != ' ') return newText;
+//            int counter = 0;
+//            string DeleteSpaces = "";
+//            int j = newText.Length - 1;
+
+//            while (newText[j] == ' ')
+//            {
+//                counter++;
+//                j--;
+//            }
+
+//            for (int i = 0; i < newText.Length - counter; i++)
+//            {
+//                DeleteSpaces += newText[i];
+                
+//            }
+//            return DeleteSpaces;
+//        }
+
+
+
+
+
+
+
+
+//    }
+
+
+//}
+
+// 
